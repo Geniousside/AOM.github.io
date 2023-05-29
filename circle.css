@@ -1,0 +1,36 @@
+.loading-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #4285F4;
+    border-top-color: transparent;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+      border-color: #4285F4;
+    }
+    25% {
+      border-color: #DB4437;
+    }
+    50% {
+      border-color: #F4B400;
+    }
+    75% {
+      border-color: #0F9D58;
+    }
+    100% {
+      transform: rotate(360deg);
+      border-color: #4285F4;
+    }
+  }
+  
